@@ -1,6 +1,15 @@
 @import "tailwindcss" source(none);
 
-/* Your shared brand theme */
+/*
+ * DameosAI Shared Tailwind Utility CDN
+ * This is a curated, pre-generated utility library.
+ * Add classes/patterns here, then rebuild and deploy.
+ *
+ * Tailwind v4 @source inline() brace expansion generates classes that
+ * consuming websites can use without their own Tailwind build.
+ */
+
+/* Shared authentication brand theme */
 @theme {
   --font-sans: "Plus Jakarta Sans", sans-serif;
 
@@ -12,7 +21,13 @@
   --color-brand-dark: #cf4817;
 }
 
-/* Register additional shared utilities here if needed */
+/* Shared auth brand utilities. */
+@source inline("{bg,text,border,ring,outline,shadow}-{brand,brand-dark,brand-50,brand-100,brand-500,brand-600}");
+@source inline("{hover,focus,focus-visible,active}:{bg,text,border,shadow}-{brand,brand-dark,brand-500,brand-600}");
+@source inline("selection:bg-brand selection:text-white");
+
+/* Auth-specific arbitrary values used by the shared templates. */
+@source inline("bg-[#f3f4f6] max-w-[440px] max-w-[520px] rounded-[32px] rounded-[36px] shadow-[0_15px_45px_rgba(0,0,0,0.06)]");
 
 /* Display, positioning, overflow, flex and grid */
 @source inline("{block,inline-block,inline,flex,inline-flex,grid,inline-grid,hidden,flow-root,contents}");
