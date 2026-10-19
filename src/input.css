@@ -10,13 +10,10 @@
  */
 
 /*
- * Include the project templates that consume this shared build. Keeping
- * source(none) above prevents Tailwind from scanning the whole workspace,
- * while these explicit sources ensure PHP-rendered and JavaScript-added
- * utilities are generated.
+ * The auth PHP and JavaScript files are deployed separately from this
+ * repository. Keep this build self-contained so Vercel does not depend on
+ * the local DameosAI workspace being present during deployment.
  */
-@source "../../../auth/php/**/*.php";
-@source "https://assets.dameosai.com/js/auth.js";
 
 /* Shared authentication brand theme */
 @theme {
@@ -36,7 +33,7 @@
 @source inline("selection:bg-brand selection:text-white");
 
 /* Auth-specific arbitrary values used by the shared templates. */
-@source inline("bg-[#f3f4f6] max-w-[440px] max-w-[520px] rounded-[32px] rounded-[36px] shadow-[0_15px_45px_rgba(0,0,0,0.06)]");
+@source inline("bg-[#f3f4f6] max-w-[440px] max-w-[520px] max-w-[calc(100vw-2.5rem)] rounded-[32px] rounded-[36px] shadow-[0_15px_45px_rgba(0,0,0,0.06)]");
 
 /* Display, positioning, overflow, flex and grid */
 @source inline("{block,inline-block,inline,flex,inline-flex,grid,inline-grid,hidden,flow-root,contents}");
@@ -126,7 +123,17 @@
 @source inline("{h,w}-{13,14}");
 @source inline("{-ml,-mr,-mt,-mb}-{1,2,3,4}");
 @source inline("{scale}-{95,99,100,105,110}");
-@source inline("text-[#1a1d20] text-[#272b30] text-[15px] text-[11px] bg-[#f3f4f6] max-w-[calc(100vw-2.5rem)]");
+@source inline("text-[#1a1d20] text-[#272b30] text-[15px] text-[11px] bg-[#f3f4f6]");
+@source inline("max-w-[calc(100vw_-_2.5rem)]");
+@source inline("shadow-[0_15px_45px_rgba(0,0,0,0.06)]");
+
+/* Classes added dynamically by assets/auth.js. */
+@source inline("border-red-400 border-gray-200/90 max-w-[calc(100vw_-_2.5rem)]");
+@source inline("fixed bottom-5 right-5 z-50 p-4 block");
+@source inline("bg-green-50 text-green-700 border-green-200");
+@source inline("bg-red-50 text-red-700 border-red-200");
+@source inline("bg-blue-50 text-blue-700 border-blue-200");
+@source inline("bg-emerald-500 text-emerald-700 text-rose-100 text-rose-600 text-rose-500");
 @source inline("{resize,resize-none,resize-x,resize-y}");
 @source inline("{list-none,list-disc,list-decimal}");
 @source inline("{pointer-events-none,pointer-events-auto}");
