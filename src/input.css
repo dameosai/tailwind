@@ -9,7 +9,6 @@
  * consuming websites can use without their own Tailwind build.
  */
 
-<<<<<<< HEAD
 /*
  * Include the project templates that consume this shared build. Keeping
  * source(none) above prevents Tailwind from scanning the whole workspace,
@@ -19,8 +18,6 @@
 @source "../../../auth/php/**/*.php";
 @source "https://assets.dameosai.com/js/auth.js";
 
-=======
->>>>>>> 954aeb83ef1d4db29b6ba1ad964e9f41cde98528
 /* Shared authentication brand theme */
 @theme {
   --font-sans: "Plus Jakarta Sans", sans-serif;
