@@ -1,0 +1,96 @@
+@import "tailwindcss" source(none);
+
+/*
+ * DameosAI Shared Tailwind Utility CDN
+ * This is a curated, pre-generated utility library.
+ * Add classes/patterns here, then rebuild and deploy.
+ *
+ * Tailwind v4 @source inline() brace expansion generates classes that
+ * consuming websites can use without their own Tailwind build.
+ */
+
+/* Display, positioning, overflow, flex and grid */
+@source inline("{block,inline-block,inline,flex,inline-flex,grid,inline-grid,hidden,flow-root,contents}");
+@source inline("{static,fixed,absolute,relative,sticky}");
+@source inline("{visible,invisible,collapse}");
+@source inline("{overflow-auto,overflow-hidden,overflow-visible,overflow-scroll,overflow-x-auto,overflow-y-auto,overflow-x-hidden,overflow-y-hidden}");
+@source inline("{flex-row,flex-row-reverse,flex-col,flex-col-reverse,flex-wrap,flex-nowrap,flex-wrap-reverse}");
+@source inline("{grow,grow-0,shrink,shrink-0}");
+@source inline("{items-start,items-end,items-center,items-baseline,items-stretch}");
+@source inline("{justify-start,justify-end,justify-center,justify-between,justify-around,justify-evenly}");
+@source inline("{self-auto,self-start,self-end,self-center,self-stretch}");
+@source inline("{place-items-start,place-items-end,place-items-center,place-items-stretch,place-content-center}");
+@source inline("{grid-cols,grid-rows}-{1..12}");
+@source inline("{col-span,row-span}-{1..12}");
+@source inline("{col-span-full,row-span-full}");
+@source inline("{gap-x,gap-y,gap}-{0..16}");
+@source inline("{order}-{1..12}");
+@source inline("{z}-{0..50}");
+@source inline("{top,right,bottom,left,inset,inset-x,inset-y}-{0,0.5,1,1.5,2,2.5,3,4,5,6,8,10,12,16,20,24,auto,full}");
+@source inline("{w,h,min-w,min-h,max-w,max-h}-{0,0.5,1,1.5,2,3,4,5,6,8,10,12,16,20,24,32,40,48,56,64,full,screen,auto,min,max,fit}");
+@source inline("{w,h}-{1/2,1/3,2/3,1/4,2/4,3/4,1/5,2/5,3/5,4/5}");
+@source inline("{aspect}-{auto,square,video}");
+@source inline("{object}-{contain,cover,fill,none,scale-down}");
+@source inline("{object}-{center,top,bottom,left,right}");
+
+/* Spacing, sizing, borders and effects */
+@source inline("{p,px,py,pt,pr,pb,pl,ps,pe,m,mx,my,mt,mr,mb,ml,ms,me,scroll-m,scroll-p}-{0,0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12,14,16,20,24,28,32,36,40,44,48,52,56,60,64,auto}");
+@source inline("{rounded,rounded-sm,rounded-md,rounded-lg,rounded-xl,rounded-2xl,rounded-3xl,rounded-full,rounded-none}");
+@source inline("{border,border-0,border-2,border-4,border-8}");
+@source inline("{border-solid,border-dashed,border-dotted,border-none}");
+@source inline("{shadow,shadow-sm,shadow-md,shadow-lg,shadow-xl,shadow-2xl,shadow-inner,shadow-none}");
+@source inline("{opacity}-{0,5,10,20,25,30,40,50,60,70,75,80,90,95,100}");
+@source inline("{cursor}-{auto,default,pointer,wait,text,move,not-allowed,grab,grabbing}");
+@source inline("{select-none,select-text,select-all,select-auto}");
+@source inline("{pointer-events-none,pointer-events-auto}");
+
+/* Typography */
+@source inline("{font-sans,font-serif,font-mono}");
+@source inline("{text-xs,text-sm,text-base,text-lg,text-xl,text-2xl,text-3xl,text-4xl,text-5xl,text-6xl,text-7xl}");
+@source inline("{font-thin,font-extralight,font-light,font-normal,font-medium,font-semibold,font-bold,font-extrabold,font-black}");
+@source inline("{italic,not-italic,uppercase,lowercase,capitalize,normal-case,underline,overline,line-through,no-underline}");
+@source inline("{text-left,text-center,text-right,text-justify}");
+@source inline("{leading-none,leading-tight,leading-snug,leading-normal,leading-relaxed,leading-loose}");
+@source inline("{tracking-tighter,tracking-tight,tracking-normal,tracking-wide,tracking-wider,tracking-widest}");
+@source inline("{whitespace-normal,whitespace-nowrap,whitespace-pre,whitespace-pre-line,whitespace-pre-wrap}");
+@source inline("{break-normal,break-words,break-all}");
+@source inline("{truncate,text-ellipsis,text-clip}");
+
+/* Common color palette: backgrounds, text, borders, outlines and rings */
+@source inline("{bg,text,border,outline,ring,decoration,fill,stroke}-{transparent,current,black,white}");
+@source inline("{bg,text,border,ring,outline}-{slate,gray,zinc,neutral,stone,red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,100,200,300,400,500,600,700,800,900,950}");
+@source inline("{bg,text,border}-{inherit,current,transparent,black,white}");
+@source inline("{bg}-{slate,gray,zinc,neutral,stone,red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,100,200,300,400,500,600,700,800,900,950}/{5,10,15,20,25,30,40,50,60,70,75,80,90,95}");
+@source inline("{text-opacity,bg-opacity}-{0,5,10,20,25,30,40,50,60,70,75,80,90,95,100}");
+
+/* Responsive utilities */
+@source inline("{sm,md,lg,xl,2xl}:{block,inline-block,inline,flex,inline-flex,grid,hidden}");
+@source inline("{sm,md,lg,xl,2xl}:{grid-cols,grid-rows}-{1..12}");
+@source inline("{sm,md,lg,xl,2xl}:{flex-row,flex-col,flex-wrap,flex-nowrap}");
+@source inline("{sm,md,lg,xl,2xl}:{items-start,items-center,items-end,justify-start,justify-center,justify-between,justify-end}");
+@source inline("{sm,md,lg,xl,2xl}:{w,h}-{1/2,1/3,2/3,1/4,3/4,full,screen,auto}");
+@source inline("{sm,md,lg,xl,2xl}:{p,px,py,m,mt,mb,mx,my,gap}-{0,1,2,3,4,5,6,8,10,12,16}");
+@source inline("{sm,md,lg,xl,2xl}:{text-xs,text-sm,text-base,text-lg,text-xl,text-2xl,text-3xl,text-4xl}");
+@source inline("{sm,md,lg,xl,2xl}:{col-span,row-span}-{1..12}");
+
+/* Interaction states */
+@source inline("{hover,focus,focus-visible,active,disabled,visited,checked,first,last,odd,even}:{bg,text,border,opacity,shadow}-{transparent,white,black,blue-500,blue-600,blue-700,gray-100,gray-200,gray-700,gray-900,red-500,red-600,green-500,green-600}");
+@source inline("{hover,focus,focus-visible,active,disabled}:{underline,no-underline,shadow,shadow-md,shadow-lg,opacity-50,opacity-100}");
+@source inline("{dark}:{bg,text,border}-{black,white,transparent,gray-100,gray-200,gray-700,gray-800,gray-900,blue-500,blue-600}");
+@source inline("{dark}:{block,hidden,flex,grid}");
+
+/* Transitions, transforms and animation */
+@source inline("{transition,transition-all,transition-colors,transition-opacity,transition-shadow,transition-transform,transition-none}");
+@source inline("{duration}-{75,100,150,200,300,500,700,1000}");
+@source inline("{ease-linear,ease-in,ease-out,ease-in-out}");
+@source inline("{scale}-{0,50,75,90,95,100,105,110,125,150}");
+@source inline("{rotate}-{0,1,2,3,6,12,45,90,180}");
+@source inline("{animate-spin,animate-ping,animate-pulse,animate-bounce}");
+@source inline("{sr-only,not-sr-only}");
+
+/* Common form and accessibility utilities */
+@source inline("{appearance-none,outline-none,outline-hidden,ring-0,ring-1,ring-2}");
+@source inline("{resize,resize-none,resize-x,resize-y}");
+@source inline("{list-none,list-disc,list-decimal}");
+@source inline("{pointer-events-none,pointer-events-auto}");
+@source inline("{accent-blue-500,accent-blue-600,accent-green-500,accent-red-500}");
